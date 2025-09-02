@@ -12,7 +12,8 @@ const faqItems = document.querySelectorAll('.faq-item') as NodeListOf<HTMLElemen
 class ThemeManager {
     private theme: 'light' | 'dark';
     constructor() {
-        this.theme = localStorage.getItem('theme') || 'light';
+        const saved = localStorage.getItem('theme');
+        this.theme = saved === 'dark' || saved === 'light' ? saved : 'light';
         this.init();
     }
 
@@ -331,7 +332,7 @@ class SearchManager {
             </div>
             <div class="no-results-message">
                 <i class="fas fa-search"></i>
-                <p>لم نتمكن من العثور على نتائج لـ "${searchInput.value}"</p>
+                <p>لم نتمكن من العثور على نتائج لـ "${searchInput?.value || ''}"</p>
                 <p>جرب كلمات مختلفة أو تصفح الأقسام أدناه</p>
             </div>
         `;
@@ -370,7 +371,7 @@ class FAQManager {
         });
     }
 
-    toggleFAQ(item) {
+    toggleFAQ(item: HTMLElement) {
         const isActive = item.classList.contains('active');
         
         // Close all other FAQ items
@@ -509,7 +510,7 @@ class PerformanceManager {
         window.addEventListener('scroll', throttledScrollHandler);
         
         // Debounce search input
-        const debouncedSearchHandler = Utils.debounce((value: string) => {
+        const debouncedSearchHandler = Utils.debounce(() => {
             // This will be handled by SearchManager
         }, 300);
 
