@@ -650,15 +650,15 @@ class ErrorManager {
 // Initialize all managers when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize all managers
-    const themeManager = new ThemeManager();
-    const searchManager = new SearchManager();
-    const faqManager = new FAQManager();
-    const navigationManager = new NavigationManager();
-    const backToTopManager = new BackToTopManager();
-    const performanceManager = new PerformanceManager();
-    const accessibilityManager = new AccessibilityManager();
-    const analyticsManager = new AnalyticsManager();
-    const errorManager = new ErrorManager();
+    new ThemeManager();
+    new SearchManager();
+    new FAQManager();
+    new NavigationManager();
+    new BackToTopManager();
+    new PerformanceManager();
+    new AccessibilityManager();
+    new AnalyticsManager();
+    new ErrorManager();
 
     // Add loading animation
     document.body.classList.add('loaded');
