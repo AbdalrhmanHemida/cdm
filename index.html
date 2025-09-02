@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="دليل شامل للطلاب المصريين الدارسين بالخارج - البعثات الدراسية وتأجيل التجنيد 2025/2026">
+    <meta name="keywords" content="بعثات, تجنيد, مصر, دراسة بالخارج, تأجيل تجنيد, طلاب مصريين">
+    <title>دليل البعثات الدراسية 2025/2026 - الطلاب المصريين بالخارج</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="stylesheet" href="src/styles/fonts.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- PWA Manifest -->
+    <!-- <link rel="manifest" href="manifest.json"> -->
+    <meta name="theme-color" content="#2563eb">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    دليل البعثات الدراسية
+                </h1>
+                <div class="header-controls">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="تبديل المظهر">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="search-toggle" class="search-toggle" aria-label="البحث">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div id="search-bar" class="search-bar hidden">
+        <div class="container">
+            <div class="search-wrapper">
+                <input type="text" id="search-input" placeholder="ابحث في المحتوى..." class="search-input">
+                <button id="search-close" class="search-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Sidebar Navigation -->
+                <aside class="sidebar">
+                    <nav class="nav-menu">
+                        <h3 class="nav-title">المحتويات</h3>
+                        <ul class="nav-list">
+                            <li><a href="#introduction" class="nav-link">المقدمة</a></li>
+                            <li><a href="#faq" class="nav-link">الأسئلة الشائعة</a></li>
+                            <li><a href="#bachelor-students" class="nav-link">طلاب البكالوريوس</a></li>
+                            <li><a href="#master-students" class="nav-link">قسم الماجستير</a></li>
+                            <li><a href="#egyptian-universities" class="nav-link">الطلاب المقيدين في جامعة بمصر</a></li>
+                            <li><a href="#missing-years" class="nav-link">فاقد الدفعات</a></li>
+                            <li><a href="#important-notes" class="nav-link">ملاحظات مهمة</a></li>
+                            <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <!-- Main Content Area -->
+                <article class="content">
+                    <!-- Introduction Section -->
+                    <section id="introduction" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-info-circle"></i>
+                                مقدمة هامة
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="alert alert-warning">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <strong>تحذير مهم:</strong> مجال البعثات مليان نصب ومعلومات مضللة، وكل يوم بتسمع قصص ناس ضاع وقتها وفلوسها بسبب وسطاء بيقولوا "لنا وسايط" أو "متدفعش غير بعد ما نخلص" — وفي النهاية بتكون حاجات مزورة والضحية هو الطالب.
+                            </div>
+                            <p>الملف ده هو خلاصة خبرة سنين وتجارب مع البعثات والجهات المختلفة. معلومات مش هتلاقيها حتى عند موظف البعثات نفسه.</p>
+                            <p>اتمنى تشاركها مع غيرك لوجه الله، ولا تنسونا من دعائكم.</p>
+                        </div>
+                    </section>
+
+                    <!-- FAQ Section -->
+                    <section id="faq" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-question-circle"></i>
+                                الأسئلة الشائعة
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="faq-container">
+                                <!-- FAQ Item 1 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>ما هي البعثات؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>البعثات مسؤولة عن:</p>
+                                        <ul>
+                                            <li>الإشراف العلمي على الطلاب بالخارج</li>
+                                            <li>تأجيل التجنيد</li>
+                                            <li>معادلة الشهادات في مصر</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 2 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>هل البعثات بتأجل التجنيد لو خلصت كلية أو فاقد دفعات؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p><strong>نعم ✅</strong>، بشرط تجيب إثبات قيد ماجستير في نفس تخصص البكالوريوس من جامعة خارج مصر.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 3 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>إمتى أقدر أقدم للبعثات؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>في أي وقت. المعلومة الشائعة إن لازم بعد 1/9 غير صحيحة ❌.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 4 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>الأوراق المطلوبة (ماستر 2025/2026 + تصريح سفر ساري حتى 31/8/2026)</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <ul>
+                                            <li>إثبات قيد ماجستير (مكتوب فيه التخصص، العام الدراسي، مدة الدراسة)</li>
+                                            <li>بطاقة الطالب + بطاقة الوالد</li>
+                                            <li>شهادة الميلاد (برقم ثلاثي)</li>
+                                            <li>شهادة البكالوريوس أو إفادة نجاح</li>
+                                            <li>صورة جواز السفر</li>
+                                            <li>رقم تليفون</li>
+                                            <li>كشف حساب بنكي (أي مبلغ/مدة، أو إقامة ولي أمر بالخارج)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 5 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>هل تصريح السفر مكتوب فيه دولة معينة؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>بيكون مكتوب جهة السفر (الدولة المسجلة). لكن رسميًا من التجنيد: تقدر تسافر بيه أي دولة ✈️.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 6 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>هل طالب الامتياز يقدر يسجل بعثات؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>بعد ما يخلص الامتياز فقط.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 7 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>هل السنة التحضيرية مقبولة؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>غير مقبولة ❌. إلا إذا مكتوب بالقبول: التخصص + المرحلة الدراسية + مدة الدراسة → يتم قبولها ✅.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 8 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>إيه حل مشكلة طلب إثبات القيد من البعثات؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>الأفضل: تروح البعثات وتطلب "الدعم الفني" وتمضي على إقرار إثبات القيد.</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 9 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>لو سني فوق 22 سنة أقدر أسجل؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <ul>
+                                            <li>لو مخلص بكالوريوس → ينفع عادي</li>
+                                            <li>لو مش مخلص بكالوريوس → لازم تثبت إنك بدأت قبل سن 22</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 10 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>ينفع أغير التخصص (علوم → هندسة مثلًا)؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>لا ❌. لازم نفس المجال (علمي علوم لطبي – علمي رياضة لهندسي).</p>
+                                    </div>
+                                </div>
+
+                                <!-- FAQ Item 11 -->
+                                <div class="faq-item">
+                                    <button class="faq-question">
+                                        <span>هل ممكن أعمل تأجيل كل سنة لحد سن 29؟</span>
+                                        <i class="fas fa-chevron-down"></i>
+                                    </button>
+                                    <div class="faq-answer">
+                                        <p>لا ❌. المعلومة دي شائعة بس غير عملية. لأن الماجستير غالبًا سنتين فقط ومفيش جامعة هتديك قيد جديد كل سنة بنفس الشروط.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Bachelor Students Section -->
+                    <section id="bachelor-students" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-user-graduate"></i>
+                                طلاب البكالوريوس
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <h3>نصائح عامة:</h3>
+                            <ul>
+                                <li>أدبي يدرس تخصصات أدبية، علمي علوم يدرس طبية، علمي رياضة يدرس هندسية</li>
+                                <li>لو السن أقل من 22: ينفع تسجل عادي</li>
+                                <li>لو السن 22 بالضبط: البعثات بتحسب من 1/9 أو تاريخ القيد، مش تاريخ ميلادك مباشرة</li>
+                                <li>لو السن فوق 22: لازم تثبت إنك بدأت الدراسة قبل 22 أو عملت تحويل جامعة</li>
+                            </ul>
+                            
+                            <h3>هل لازم تفصل نفسك من جامعة مصر؟</h3>
+                            <p>التسجيل لا يحتاج فصل. لكن قبل استلام التصريح: لو لك تأجيل في جامعة مصر → لازم تجيب خطاب فصل مختوم.</p>
+                        </div>
+                    </section>
+
+                    <!-- Master Students Section -->
+                    <section id="master-students" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-user-tie"></i>
+                                قسم الماجستير
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <ul>
+                                <li><strong>شرط أساسي:</strong> التخرج قبل سن 29</li>
+                                <li>لازم يكون الماجستير في نفس التخصص أو تخصص قريب</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Egyptian Universities Section -->
+                    <section id="egyptian-universities" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-university"></i>
+                                الطلاب المقيدين في جامعة بمصر (تصريح سفر الإجازات)
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>لو لسه طالب ومش في آخر سنة:</p>
+                            <ol>
+                                <li>خد إثبات قيد من شؤون الكلية (أيام الإجازة)</li>
+                                <li>قدمه للتجنيد مع بطاقتك</li>
+                                <li>تقدر تطلع تصريح سفر (سياحة/زيارة)</li>
+                                <li>مدته حاليًا أسبوعين تقريبًا</li>
+                            </ol>
+                        </div>
+                    </section>
+
+                    <!-- Missing Years Section -->
+                    <section id="missing-years" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-clock"></i>
+                                فاقد الدفعات
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>ينفع يقدم بعثات عادي ✅.</p>
+                        </div>
+                    </section>
+
+                    <!-- Important Notes Section -->
+                    <section id="important-notes" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                ملاحظات مهمة
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle"></i>
+                                <ul>
+                                    <li>كل القوانين والإجراءات ممكن تتغير في أي وقت</li>
+                                    <li>المتابعة المستمرة مطلوبة</li>
+                                    <li>هنعمل ملف منفصل لشرح خطوات التسجيل + نصائح لتفادي الأخطاء</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Contact Section -->
+                    <section id="contact" class="section">
+                        <div class="section-header">
+                            <h2 class="section-title">
+                                <i class="fas fa-envelope"></i>
+                                تواصل معنا
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <p>لو عندك استفسار إضافي:</p>
+                            <ul>
+                                <li>تقدر تكتب على جروب الفيسبوك المخصص للطلاب</li>
+                                <li>هدف الجروب: مساعدة الطلاب وتقديم الإفادة مجانًا</li>
+                            </ul>
+                            <div class="contact-card">
+                                <i class="fab fa-facebook"></i>
+                                <p><strong>لينك الجروب:</strong> <a href="https://www.facebook.com/share/g/14LUxQKGkfD/" class="link" target="_blank" rel="noopener noreferrer">اضغط هنا للانضمام للجروب</a></p>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fas fa-book"></i>
+                                <p><strong>ارشادات التقديم في البعثات:</strong> <a href="https://sus.cdm.edu.eg/auth/help" class="link" target="_blank" rel="noopener noreferrer">اضغط هنا لقراءة الإرشادات</a></p>
+                            </div>
+                            <div class="contact-card">
+                                <i class="fas fa-location-dot"></i>
+                                <p><strong>العنوان (الدور الرابع):</strong> <a href="https://maps.app.goo.gl/VqafmAV3zQMr18U57" class="link" target="_blank" rel="noopener noreferrer">افتح على خرائط جوجل</a></p>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 دليل البعثات الدراسية - جميع الحقوق محفوظة</p>
+                <p>مشروع تطوعي لمساعدة الطلاب المصريين الدارسين بالخارج</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
