@@ -13,7 +13,7 @@ class ThemeManager {
     private theme: 'light' | 'dark';
     constructor() {
         const saved = localStorage.getItem('theme');
-        this.theme = saved === 'dark' || saved === 'light' ? saved : 'light';
+        this.theme = saved === 'dark' || saved === 'light' ? saved : 'dark';
         this.init();
     }
 
