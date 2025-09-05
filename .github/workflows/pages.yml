@@ -1,11 +1,12 @@
-name: Deploy to GitHub Pages
+name: CI/CD
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
     branches:
-      - main
+      - main     # deploy only from main
+      - develop  # optional: still run build/tests but no deploy
+      - 'release/*'  # optional: still run build/tests but no deploy
+  pull_request:   # run build/tests on all PRs
   workflow_dispatch:
 
 permissions:
@@ -45,11 +46,13 @@ jobs:
         run: pnpm build
 
       - name: Upload artifact
+        if: github.ref == 'refs/heads/main'   # only upload artifact when main branch builds
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
   deploy:
+    if: github.ref == 'refs/heads/main'       # only deploy when on main
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -59,5 +62,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-
